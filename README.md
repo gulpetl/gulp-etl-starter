@@ -14,6 +14,7 @@ or run from the command line as a regular gulp task
 * Run javascript version: gulp --gulpfile gulpfile.js default
 * Run TypeScript version: gulp --gulpfile gulpfile.ts processCsv
 * Compile TypeScript: `npm run build`
+    * note: not needed to run TypeScript directly, as on line above; this transpiles TypeScript to javascript. It is included here mainly to verify TypeScript code is correct
 
 
 Note: This document is written in [Markdown](https://daringfireball.net/projects/markdown/). We like to use [Typora](https://typora.io/) and [Markdown Preview Plus](https://chrome.google.com/webstore/detail/markdown-preview-plus/febilkbfcbhebfnokafefeacimjdckgl?hl=en-US) for our Markdown work..
