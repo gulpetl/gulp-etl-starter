@@ -3,11 +3,6 @@
 This starter project is a **gulp-etl** project that performs ETL tasks using [gulp](https://gulpjs.com/). You can debug in [VScode](https://code.visualstudio.com/download)
 or run from the command line as a regular gulp task
 
-### Usage
-**gulp-etl** plugins accept a configObj as the first parameter; the configObj
-will contain any info the plugin needs. For this plugin the configObj is the "Options" object for [csv-parse](https://csv.js.org/parse/), described [here](https://csv.js.org/parse/options/); the only difference is that the "columns" property cannot be falsey, since it would result in arrays being returned
-for each row instead of objects. A falsey value for columns will be overridden to true.
-
 ### Quick Start
 * Dependencies: 
     * [git](https://git-scm.com/downloads)
