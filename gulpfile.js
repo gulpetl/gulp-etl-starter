@@ -1,5 +1,5 @@
-/* javascript: parse all .CSV files in a folder into Message Stream,
-then compose them right back into CSV files again and save with
+/* javascript: simple gulpfile that parses all .CSV files in a folder into Message Stream,
+then composes them right back into CSV files again and save with
 changed names */
 
 var gulp = require('gulp')
@@ -10,7 +10,7 @@ var targetCsv = require('gulp-etl-target-csv').targetCsv
 exports.default = function() {
     return gulp.src(['data/*.csv', '!data/*-parsed.csv'])
     .on('data', function (file) {
-        console.log('Starting processing on ' + file.basename)
+        console.log('JAVASCRIPT: Starting processing on ' + file.basename)
     })  
     .pipe(tapCsv({ columns:true }))
     .pipe(rename({ extname: ".ndjson" })) // rename to *.ndjson
